@@ -1,0 +1,283 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff7e0;  
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #bc6c25;  
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d4a373;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px;
+    background-color:  #fffcf2; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.words ul {
+    background-color: #f7e3af; 
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.guesses  {
+   
+  
+    padding: 15px;
+   
+}
+
+.guesses ul{
+    background-color: #fcfcfc;  
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.guess-message {
+    font-size: 1.125rem;
+    color: #ff6b6b;
+}
+
+.message {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+
+form {
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ce9861;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ee5253;
+}
+
+
+.stats-p {
+    background-color: #fff7e0;  
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+   
+}
+
+.data-personal li {
+    margin: 10px 0;
+    font-size: 1.125rem;
+}
+
+
+.stats-g {
+
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+   
+}
+
+.data-global li {
+    margin: 10px 0;
+    font-size: 1.125rem;
+}
+
+
+.leaderboard {
+    background-color: #e2ba8d; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.leaderboard h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.leaderboard ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+.leaderboard li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rank {
+    background-color: #ff6f61; 
+    color: white;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-right: 20px; 
+    flex-shrink: 0; 
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1; 
+}
+
+.score {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; 
+    text-align: right;
+}
+
+
+.shield {
+    background-color: #000; 
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    position: relative;
+    flex-shrink: 0; 
+}
+
+.shield::before {
+    content: "★";  
+    font-size: 1.5rem;
+    color: white;
+}
+
+.final-standings {
+    font-size: 1rem;
+    color: #4caf50;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: -10px;
+}
+
+
+@media (max-width: 37.5rem) {
+    .leaderboard {
+        max-width: 100%; 
+    }
+
+    .leaderboard li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rank {
+        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+form[action="/logout"] button {
+    background-color: #ff9f43;  
+    margin-top: 20px;
+}
+
+form[action="/logout"] button:hover {
+    background-color: #ff6f61;
+}
+
+
+@media (max-width: 37.5rem) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

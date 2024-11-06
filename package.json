@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.1",
+    "project1": "file:"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project1",
+  "description": "**Due Sun Oct 20, 11:59pm PT**",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
